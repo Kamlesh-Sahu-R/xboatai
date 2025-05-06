@@ -24,7 +24,7 @@ export default function Navbar() {
 
                 <Link to={'/'} style={{ textDecoration: 'none' }}>
                     
-                    <Typography
+                    {/* <Typography
                               sx={{
                                 fontFamily: 'Ubuntu',
                                 fontWeight: 700,
@@ -35,7 +35,8 @@ export default function Navbar() {
                               }}
                     >
                         Bot AI
-                    </Typography>
+                    </Typography> */}
+                    <h1>Bot AI</h1>
                 </Link>
         </Stack>
     )
