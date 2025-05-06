@@ -11,7 +11,14 @@ function App() {
 
   return (
     <div >
-      <Grid container sx={{ background: 'linear-gradient(rgba(215, 199, 244, 0.2), rgba(151, 133, 186, 0.2))' }} >
+      <Grid 
+        container 
+        sx={{ 
+          display: 'flex',
+          flexDirection: 'row',
+          background: 'linear-gradient(rgba(215, 199, 244, 0.2), rgba(151, 133, 186, 0.2))'
+        }}
+      >
         <Grid
           sx={{
             gridColumn: { xs: 'span 12', md: 'span 3' },
