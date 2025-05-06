@@ -1,15 +1,21 @@
 import Sidebar from "./components/Sidebar/Sidebar";
 import { Outlet } from 'react-router-dom'
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
 import * as React from 'react';
 import { Grid } from '@mui/material'
 
 function App() {
 
-  const [chat, setChat] = useState([])
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [chat, setChat] = useState([]);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    // Force a reflow to ensure layout is updated
+    window.dispatchEvent(new Event('resize'));
+  }, [menuOpen]);
 
   return (
+
     <div >
       <Grid container sx={{ background: 'linear-gradient(rgba(215, 199, 244, 0.2), rgba(151, 133, 186, 0.2))' }} >
         {/* <Grid
