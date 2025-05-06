@@ -3,16 +3,16 @@ import nwechatIcon from '../../assets/newchat.png';
 import editIcon from '../../assets/edit.png';
 import { Link } from 'react-router-dom'
 import CloseIcon from '@mui/icons-material/Close';
-import { useNavigate } from 'react-router-dom';
+//import { useNavigate } from 'react-router-dom';
 
 export default function Sidebar({ setChat, closeMenu }) {
 
     const isMobile = useMediaQuery('(max-width:800px)');
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const handleNavigateHistory = () => {
-        navigate('/history');
-    };
+    // const handleNavigateHistory = () => {
+    //     navigate('/history');
+    // };
 
     return (
         <Box >
@@ -62,7 +62,7 @@ export default function Sidebar({ setChat, closeMenu }) {
 
             <Box p={{xs:2, md:3}}>
                 <Link to={'/history'}>
-                    <Button variant="contained" sx={{ width: 1, backgroundColor: '#D7C7F4'}} onClick={handleNavigateHistory}> 
+                    <Button variant="contained" sx={{ width: 1, backgroundColor: '#D7C7F4'}} > 
                         {/* <Typography
                             sx={{
                                 fontFamily: 'Ubuntu',
