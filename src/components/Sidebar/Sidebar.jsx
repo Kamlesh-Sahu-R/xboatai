@@ -1,4 +1,4 @@
-import { Typography, Box, Stack, Button, useMediaQuery } from '@mui/material';
+import { Box, Stack, Button, useMediaQuery } from '@mui/material';
 import nwechatIcon from '../../assets/newchat.png';
 import editIcon from '../../assets/edit.png';
 import { Link } from 'react-router-dom'
