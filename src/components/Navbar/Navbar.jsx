@@ -1,4 +1,4 @@
-import { Typography, Stack, useMediaQuery } from '@mui/material'
+import { Stack, useMediaQuery } from '@mui/material'
 import { Link, useOutletContext } from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
 
