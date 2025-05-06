@@ -18,7 +18,7 @@ function App() {
             width: { xs: '70%', md: 'auto'},
             transform: { xs: menuOpen ? 'translateX(0)' : 'translateX(-100%)', md: 'none' },
             transition: { xs: 'transform 400ms ease', md: 'none' },
-            position: { xs: 'fixed', md: 'relative' },
+            position: { xs: 'absolute', md: 'relative' },
             height: '100vh',
             zIndex: { xs: 9999, md: 1 },
             boxShadow: { xs: menuOpen ? 10 : 0, md: 0 },

@@ -15,7 +15,7 @@ export default function Home() {
   const [chatId, setChatId] = useState(1);
   const [selectedChatId, setSelectedChatId] = useState(null);
   const [scrollToBottom, setScrollToBottom] = useState(false);
-  const { chat, setChat } = useOutletContext();
+  const { chat, setChat, } = useOutletContext();
   
 
   // GENERATING AI RESPONSE
