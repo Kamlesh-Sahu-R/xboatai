@@ -63,7 +63,7 @@ export default function Sidebar({ setChat, closeMenu }) {
             <Box p={{xs:2, md:3}}>
                 <Link to={'/history'}>
                     <Button variant="contained" sx={{ width: 1, backgroundColor: '#D7C7F4'}} onClick={handleNavigateHistory}> 
-                        <Typography
+                        {/* <Typography
                             sx={{
                                 fontFamily: 'Ubuntu',
                                 fontWeight: 700,
@@ -72,9 +72,9 @@ export default function Sidebar({ setChat, closeMenu }) {
                                 letterSpacing: '0%',
                                 color: '#414146',
                             }}
-                        >
+                        > */}
                             Past Conversations
-                        </Typography>
+                        {/* </Typography> */}
                     </Button>
                 </Link>
             </Box>
