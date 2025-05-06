@@ -9,6 +9,8 @@ import { useOutletContext } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 
 
+
+
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
   const listRef = useRef(null);
@@ -16,6 +18,7 @@ export default function Home() {
   const [selectedChatId, setSelectedChatId] = useState(null);
   const [scrollToBottom, setScrollToBottom] = useState(false);
   const { chat, setChat, } = useOutletContext();
+
   
 
   // GENERATING AI RESPONSE
