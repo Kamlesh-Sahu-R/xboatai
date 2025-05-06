@@ -2,7 +2,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import { Outlet } from 'react-router-dom'
 import { useState } from 'react';
 import * as React from 'react';
-import { Grid } from '@mui/material'
+import { Box, Grid } from '@mui/material'
 
 function App() {
 
@@ -10,8 +10,8 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <div >
-      <Grid 
+
+      <Box 
         container 
         sx={{ 
           display: 'flex',
@@ -36,8 +36,7 @@ function App() {
           <Grid sx={{ gridColumn: { xs: 'span 12', md: 'span 9' }}}>
             <Outlet context={{ chat: chat, setChat: setChat, handleMobileMenu: setMenuOpen }} />
           </Grid>
-      </Grid>
-    </div>
+      </Box>
   );
 }
 
